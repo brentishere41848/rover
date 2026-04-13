@@ -21,6 +21,7 @@ function openModal() {
   }
 
   modal.setAttribute("aria-hidden", "false");
+  modal.hidden = false;
   document.body.classList.add("redirect-modal-open");
   authorizePanel.classList.add("redirect-panel--active");
   loadingPanel.classList.remove("redirect-panel--active");
@@ -32,6 +33,7 @@ function closeModal() {
   }
 
   modal.setAttribute("aria-hidden", "true");
+  modal.hidden = true;
   document.body.classList.remove("redirect-modal-open");
   authorizePanel.classList.add("redirect-panel--active");
   loadingPanel.classList.remove("redirect-panel--active");

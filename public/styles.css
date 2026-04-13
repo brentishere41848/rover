@@ -70,7 +70,7 @@ body.redirect-modal-open {
   width: 100%;
 }
 
-body.redirect-modal-open .app-shell {
+body.redirect-modal-open .app-shell > :not(.redirect-modal) {
   filter: blur(12px);
   transform: scale(0.985);
   transition: filter 220ms ease, transform 220ms ease;
@@ -355,10 +355,6 @@ a {
   pointer-events: auto;
 }
 
-.redirect-modal__backdrop {
-  display: none;
-}
-
 .redirect-modal__dialog {
   position: relative;
   width: min(90vw, 1485px);
@@ -402,10 +398,6 @@ a {
 
 .redirect-modal__close:hover {
   color: #ffffff;
-}
-
-.redirect-modal__body {
-  display: none;
 }
 
 .redirect-panel {
