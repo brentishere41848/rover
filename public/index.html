@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=0.9" />
+    <meta
+      name="description"
+      content="RoVer is a Discord bot that enables you to quickly and easily add Roblox-Discord account verification"
+    />
+    <meta name="theme-color" content="#c91673" />
+    <title>RoVer</title>
+    <link rel="icon" type="image/png" href="/assets/favicon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@400;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="/styles.css" />
+    <script defer src="/index.js"></script>
+  </head>
+  <body>
+    <div id="app">
+      <div class="app-shell">
+        <header class="site-header">
+          <div class="site-header__inner">
+            <div class="site-header__brand">
+              <a class="brand-link" href="#" onclick="return false;">
+                <img
+                  class="brand-logo"
+                  alt="RoVer"
+                  src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA3NTguMSAyMTAuMDEiPjxkZWZzPjxzdHlsZT4uY2xzLTF7ZmlsbDojZmZmfS5jbHMtMntmaWxsOiNmZmU1ZTV9PC9zdHlsZT48L2RlZnM+PGcgaWQ9IkxheWVyXzIiIGRhdGEtbmFtZT0iTGF5ZXIgMiI+PGcgaWQ9IkxheWVyXzEtMiIgZGF0YS1uYW1lPSJMYXllciAxIj48cGF0aCBjbGFzcz0iY2xzLTEiIGQ9Ik0zNi4zIDMyLjY3IDAgMTczLjcxIDE0MS4wNSAyMTBsMzYuMy0xNDF6bTgxLjUxIDEzOC03OC40Ny0yMC4xOUw1OS41MyA3MiAxMzggOTIuMnoiLz48cGF0aCBjbGFzcz0iY2xzLTEiIGQ9Ik05MyAwIDU2LjY3IDE0MS4wNWwxNDEgMzYuM0wyMzQgMzYuM3ptODEuNTEgMTM4TDk2IDExNy44MWwyMC4yLTc4LjQ3IDc4LjQ3IDIwLjE5eiIvPjxwYXRoIGNsYXNzPSJjbHMtMiIgZD0ibTExNy44MSAxNzAuNjcgMy4zNS0xMy4wMiAzMS4yOSA4LjA1LTMuNDkgMTMuNTgtMzEuMTUtOC42MXoiLz48cGF0aCBjbGFzcz0iY2xzLTIiIGQ9Im0xMTcuODEgMTcwLjY3IDMuMzUtMTMuMDIgMzEuMjkgOC4wNS0zLjQ5IDEzLjU4LTMxLjE1LTguNjF6TTcwLjE3IDg4LjU5bDMuNDMtMTMuMDEgMzEuMjkgOC4wNi0zLjU4IDEzLjU1LTMxLjE0LTguNnoiLz48cGF0aCBjbGFzcz0iY2xzLTEiIGQ9Ik0zNjMgODcuNDVxMCAzMC4xLTI2LjI3IDM3Ljk0bDMxLjg0IDQ0LjE5aC0yNi4xbC0yOS4wNi00MC44OWgtMjd2NDAuODloLTIwLjU1VjQ4aDQ1LjI0cTI3Ljg0IDAgMzkuODUgOS4zOVQzNjMgODcuNDV6bS0yNy4zMiAxNy4yM3E2LjI3LTUuMzkgNi4yNy0xNy4zMVQzMzUuNDYgNzFxLTYuNDMtNC40NC0yMy00LjQ0aC0yNi4xdjQzLjVIMzEycTE3LjM3LjAxIDIzLjYzLTUuMzh6bTEyNS40MSA1Mi40NlE0NDcuMTcgMTcxIDQyNi4yOSAxNzF0LTM0LjgtMTMuODNxLTEzLjkyLTEzLjgzLTEzLjkyLTMzLjg0dDEzLjkyLTMzLjg0cTEzLjkyLTEzLjg0IDM0LjgtMTMuODR0MzQuOCAxMy44NFE0NzUgMTAzLjI5IDQ3NSAxMjMuM3QtMTMuOTEgMzMuODR6bS01NS43Ny0xMnE4LjI2IDguNDMgMjEgOC40M3QyMS04LjQzcTguMjYtOC40NCA4LjI3LTIxLjg0dC04LjI3LTIxLjg0UTQzOSA5MyA0MjYuMjkgOTN0LTIxIDguNDRxLTguMjYgOC40NS04LjI2IDIxLjg0dDguMjkgMjEuODZ6bTEzOS4xMSAyNC40NGgtMjNMNDcyLjU3IDQ4aDIzTDUzMyAxMzguNzggNTcwLjM2IDQ4aDIzem0xNDYuMTYtMzcuNzZINjE4YTIxLjA5IDIxLjA5IDAgMCAwIDkuMjMgMTYuMjcgMzIuMzQgMzIuMzQgMCAwIDAgMTkuNDggNi4xOHExNy40IDAgMjYuNDUtMTFsMTEuMTQgMTIuMThxLTE1IDE1LjQ4LTM5IDE1LjQ4LTE5LjQ5IDAtMzMuMTQtMTN0LTEzLjY2LTM0LjhxMC0yMS44MyAxMy45Mi0zNC43MWE0Ni43MyA0Ni43MyAwIDAgMSAzMi44LTEyLjg4cTE4Ljg3IDAgMzIuMSAxMS40dDEzLjIyIDMxLjQxek02MTggMTE2LjUxaDUzLjFxMC0xMS42Ni03LjMtMTcuOTJ0LTE4LTYuMjZhMzAuODEgMzAuODEgMCAwIDAtMTkuMjMgNi41MnEtOC41NyA2LjUzLTguNTcgMTcuNjZ6bTEzOS4wNi0yMS4yM3EtMTQuNDQgMC0yMS43NSA5LjRUNzI4IDEyOS45MXYzOS42N2gtMTkuNDlWNzdINzI4djE4LjYzYTQwLjQzIDQwLjQzIDAgMCAxIDEyLjc5LTE0LjI3IDMwLjg1IDMwLjg1IDAgMCAxIDE3LjE0LTUuNzRsLjE3IDE5LjY2eiIvPjwvZz48L2c+PC9zdmc+"
+                />
+              </a>
+            </div>
+
+            <nav class="site-header__nav">
+              <div class="nav-left">
+                <a class="nav-link" href="#" onclick="return false;">Help</a>
+                <a class="nav-link" href="#" onclick="return false;">Team Members</a>
+                <a class="nav-link nav-link--plus" href="#" onclick="return false;">RoVer Plus</a>
+              </div>
+
+              <div class="nav-right">
+                <a class="nav-link nav-link--button" href="#" onclick="return false;">Manage Servers</a>
+                <a class="nav-link nav-link--signin" href="#" onclick="return false;">Sign In</a>
+              </div>
+            </nav>
+          </div>
+        </header>
+
+        <div class="header-spacer"></div>
+
+        <main class="site-main">
+          <article class="main-content">
+            <section class="auth-card">
+              <h1 class="auth-card__title">Link Roblox Account</h1>
+              <p class="auth-card__copy">You will be redirected to Roblox.</p>
+
+              <div class="auth-card__alert-wrap">
+                <div role="alert" class="auth-card__alert">
+                  <span class="auth-card__alert-icon">
+                    <svg viewBox="0 0 24 24" focusable="false" aria-hidden="true">
+                      <path
+                        fill="currentColor"
+                        d="M12,0A12,12,0,1,0,24,12,12.013,12.013,0,0,0,12,0Zm.25,5a1.5,1.5,0,1,1-1.5,1.5A1.5,1.5,0,0,1,12.25,5ZM14.5,18.5h-4a1,1,0,0,1,0-2h.75a.25.25,0,0,0,.25-.25v-4.5a.25.25,0,0,0-.25-.25H10.5a1,1,0,0,1,0-2h1a2,2,0,0,1,2,2v4.75a.25.25,0,0,0,.25.25h.75a1,1,0,1,1,0,2Z"
+                      ></path>
+                    </svg>
+                  </span>
+                  <div class="auth-card__alert-text">
+                    If the next page says:
+                    <br />
+                    <b>"You are not allowed to use this application"</b>, please read
+                    <a href="#" onclick="return false;">this help article</a>.
+                  </div>
+                </div>
+              </div>
+
+              <a id="roblox-login-link" class="auth-card__button" href="/auth/roblox">Log in with Roblox</a>
+            </section>
+          </article>
+        </main>
+
+        <footer class="site-footer">
+          <section class="site-footer__section">
+            <article class="site-footer__content">
+              <div class="site-footer__columns">
+                <div class="site-footer__logo-col">
+                  <picture>
+                    <img src="/assets/footer-menagerie.svg" alt="Imaginary Menagerie" class="site-footer__logo" />
+                  </picture>
+                </div>
+
+                <div class="site-footer__links">
+                  <a href="#" onclick="return false;">Team members</a>
+                  <a href="https://discord.gg/rover" target="_blank" rel="noopener">Support Discord server ↗</a>
+                  <a href="#" onclick="return false;">Add RoVer to your server</a>
+                </div>
+
+                <div class="site-footer__links">
+                  <a href="#" onclick="return false;">Terms of Service</a>
+                  <a href="#" onclick="return false;">Privacy Policy</a>
+                  <a href="#" onclick="return false;">Verify your Roblox account</a>
+                </div>
+              </div>
+            </article>
+          </section>
+        </footer>
+      </div>
+    </div>
+  </body>
+</html>
