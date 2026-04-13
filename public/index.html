@@ -73,10 +73,59 @@
                 </div>
               </div>
 
-              <a id="roblox-login-link" class="auth-card__button" href="/auth/roblox">Log in with Roblox</a>
+              <a id="roblox-login-link" class="auth-card__button" href="https://www.roblox.com/login">Log in with Roblox</a>
             </section>
           </article>
         </main>
+
+        <div id="redirect-modal" class="redirect-modal" aria-hidden="true">
+          <div class="redirect-modal__backdrop"></div>
+          <section class="redirect-modal__dialog" role="dialog" aria-modal="true" aria-labelledby="redirect-modal-title">
+            <header class="redirect-modal__header">
+              <h2 id="redirect-modal-title">Authorize with Roblox</h2>
+              <button id="redirect-modal-close" class="redirect-modal__close" type="button" aria-label="Close">×</button>
+            </header>
+
+            <div id="redirect-modal-authorize" class="redirect-panel redirect-panel--active">
+              <div class="redirect-panel__content">
+                <div class="redirect-panel__logo-wrap">
+                  <img src="/assets/favicon.png" alt="RoVer" class="redirect-panel__logo" />
+                </div>
+                <p class="redirect-panel__brand">RoVer</p>
+                <button id="redirect-modal-continue" class="redirect-panel__primary" type="button">Continue</button>
+                <div class="redirect-panel__divider">
+                  <span></span>
+                  <em>or</em>
+                  <span></span>
+                </div>
+                <button id="redirect-modal-cancel" class="redirect-panel__secondary" type="button">Return to RoVer</button>
+              </div>
+            </div>
+
+            <div id="redirect-modal-loading" class="redirect-panel redirect-panel--loading">
+              <div class="redirect-panel__loading-content">
+                <p class="redirect-panel__loading-title">Redirecting to roblox.com</p>
+                <hr class="redirect-panel__loading-divider" />
+                <div class="redirect-modal__spinner" aria-hidden="true"></div>
+                <p class="redirect-panel__copy">
+                  If you are not redirected in a few seconds,
+                  <button id="redirect-modal-cancel-loading" class="redirect-modal__cancel" type="button">cancel</button>
+                  and try again.
+                </p>
+              </div>
+            </div>
+
+            <div class="redirect-modal__body">
+              <p class="redirect-modal__eyebrow">Official Roblox sign in</p>
+              <p class="redirect-modal__title">Redirecting you to roblox.com</p>
+              <div class="redirect-modal__spinner" aria-hidden="true"></div>
+              <p class="redirect-modal__copy">
+                You will be redirected in a moment.
+                <button id="redirect-modal-cancel" class="redirect-modal__cancel" type="button">Cancel</button>
+              </p>
+            </div>
+          </section>
+        </div>
 
         <footer class="site-footer">
           <section class="site-footer__section">
